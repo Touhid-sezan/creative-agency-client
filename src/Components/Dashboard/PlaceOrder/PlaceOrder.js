@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import SideBar from '../../SharedComponents/SideBar/SideBar';
 import uploader from '../../../images/logos/upload.png';
@@ -9,7 +9,7 @@ const PlaceOrder = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const { register, handleSubmit, errors } = useForm();
     const onSubmit = data => {
-        fetch('http://localhost:5000/serviceOrders', {
+        fetch('https://radiant-refuge-31272.herokuapp.com/serviceOrders', {
             method:'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(data)

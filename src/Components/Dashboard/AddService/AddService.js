@@ -27,7 +27,7 @@ const AddService = () => {
         formData.append('description', serviceData.description);
 
 
-        fetch('http://localhost:5000/addService', {
+        fetch('https://radiant-refuge-31272.herokuapp.com/addService', {
             method: 'POST',
             body: formData
         })

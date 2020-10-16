@@ -7,7 +7,7 @@ const OrderList = () => {
     const [order, setOrder] = useState([]);
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 
-    fetch('http://localhost:5000/serviceOrdersByEmail', {
+    fetch('https://radiant-refuge-31272.herokuapp.com/serviceOrdersByEmail', {
             method:'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({email: loggedInUser.email})
@@ -20,7 +20,7 @@ const OrderList = () => {
         <section className="container-fluid row">
             <SideBar></SideBar>
             <div className="col-md-10 p-4 pr-5" style={{ position: "absolute", right: 0, backgroundColor: "#F4FDFB" }}>
-                <h5 className="text-brand">My Services</h5>
+                <h5 className="text-brand">Services</h5>
                 <table class="table">
             <thead>
                 <tr>

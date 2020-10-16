@@ -5,7 +5,7 @@ import SideBar from '../../SharedComponents/SideBar/SideBar';
 const MakeReview = () => {
     const { register, handleSubmit, errors } = useForm();
     const onSubmit = data => {
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://radiant-refuge-31272.herokuapp.com/reviews', {
             method:'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(data)

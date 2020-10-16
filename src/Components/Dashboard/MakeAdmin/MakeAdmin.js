@@ -5,7 +5,7 @@ import SideBar from '../../SharedComponents/SideBar/SideBar';
 const MakeAdmin = () => {
     const { register, handleSubmit, errors } = useForm();
     const onSubmit = data => {
-        fetch('http://localhost:5000/admins', {
+        fetch('https://radiant-refuge-31272.herokuapp.com/admins', {
             method:'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(data)

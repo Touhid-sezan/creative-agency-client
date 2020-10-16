@@ -19,32 +19,32 @@ export const UserContext = createContext();
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
   return (
-    <UserContext.Provider value={[loggedInUser,setLoggedInUser]}>
-    <Router>
-      <Switch>
-        <Route exact path="/">
-          <Home></Home>
-        </Route>
-        <Route path="/login">
-          <Login></Login>
-        </Route>
-        <PrivateRoute path="/addService">
-          <AddService></AddService>
-        </PrivateRoute>
-        <PrivateRoute path="/makeAdmin">
-          <MakeAdmin></MakeAdmin>
-        </PrivateRoute>
-        <PrivateRoute path="/placeOrder">
-          <PlaceOrder />
-        </PrivateRoute>
-        <PrivateRoute path="/services">
-          <ServiceList />
-        </PrivateRoute>
-        <PrivateRoute path="/makeReview">
-          <MakeReview />
-        </PrivateRoute>
-      </Switch>
-    </Router>
+    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <PrivateRoute path="/addService">
+            <AddService></AddService>
+          </PrivateRoute>
+          <PrivateRoute path="/makeAdmin">
+            <MakeAdmin></MakeAdmin>
+          </PrivateRoute>
+          <PrivateRoute path="/placeOrder">
+            <PlaceOrder />
+          </PrivateRoute>
+          <PrivateRoute path="/services">
+            <ServiceList />
+          </PrivateRoute>
+          <PrivateRoute path="/makeReview">
+            <MakeReview />
+          </PrivateRoute>
+        </Switch>
+      </Router>
     </UserContext.Provider>
   );
 }
