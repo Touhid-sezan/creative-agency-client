@@ -1,0 +1,22 @@
+.footer-section{
+    background-color: #FBD062;
+    padding: 40px;
+}
+input{
+    display: block;
+    width: 100%;
+    margin:10px 0 ;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+input[type="submit"] {
+    background: black;
+    color: white;
+}
+textarea{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}

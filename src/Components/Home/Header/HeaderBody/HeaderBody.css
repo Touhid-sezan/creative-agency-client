@@ -1,0 +1,14 @@
+#header-body{
+    margin: 35px;
+    padding:40px;
+}
+h1{
+    font-size: 48px;
+    font-weight: bold;
+    line-height:60px;
+    color: #111430;
+}
+.header-paragraph{
+    font-weight:regular;
+    line-height:24px;
+}

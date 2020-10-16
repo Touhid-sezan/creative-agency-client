@@ -1,0 +1,16 @@
+.client{
+    margin: 100px 0px;
+}
+.client-img{
+    width:140px;
+    height: 50px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.client-img:hover{
+    width: 150px;
+    height: 60px;
+    background-color:#7ab259;
+    border-radius: 5px;
+    color: #11111;
+}

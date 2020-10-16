@@ -1,0 +1,9 @@
+.skewed-bg{
+    background: #fbd062;
+    padding: 50px 0;
+    transform:skew(0deg, -4deg);
+    margin-top: -50px; 
+}
+.skew{
+      transform:skew(0deg, 4deg);
+    }

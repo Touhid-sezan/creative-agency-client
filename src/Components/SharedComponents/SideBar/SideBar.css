@@ -1,0 +1,4 @@
+.sidebar li:hover span{
+    display: inline-block;
+    transform: translate(5px);
+}

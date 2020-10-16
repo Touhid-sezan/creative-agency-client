@@ -1,0 +1,56 @@
+.container{
+    position: relative;
+    width: 1100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+    padding:30px;
+}
+.container .service{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: rgb(177, 46, 46);
+    margin: 30px 10px;
+    padding:20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 20px rgba(190, 19, 19, 0.5);
+    transition:0.5s ease-in-out;
+}
+.container .service:hover{
+    height: 420px;
+}
+.container .service .img-box{
+    position: relative;
+    width:260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+}
+.container .service .img-box img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+.container .service .content {
+    position: relative;
+    margin-top:-140px;
+    padding:10px 15px;
+    text-align: center;
+    color: #111111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.container .service:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top:-40px;
+    transition-delay: 0.3s;
+}
+@media and screen and (max-width:768){
+    .service{
+        max-width: 500px;
+    }
+}
